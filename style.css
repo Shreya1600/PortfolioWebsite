@@ -1,0 +1,237 @@
+/* IMPORTED GOOGLE FONTS-ROBOTO,YEON SUNG,SOURCE CODE PRO,FIRA SANS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Source+Code+Pro:wght@300&family=Yeon+Sung&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap'); * {
+    margin: 10;
+    padding: 10;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(202, 188, 188);
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 45px;
+
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: purple;
+}
+
+.main {
+
+    width: 90vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(250, 219, 250);
+    width: 100vw;
+    height: 100vh;
+}
+
+.infoContainer {
+
+    height: 68vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+}
+
+.devInfo h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.devInfo p {
+    font-size: 1.5em;
+
+}
+
+.hello {
+    font-size: 3em;
+
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+
+.about {
+    font-size: 2.5em;
+}
+
+.moreabout {
+    font-size: 2em;
+    margin-top: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.buttons {
+    margin-top: 2.2em;
+    font-size: 10px;
+}
+
+.btn {
+    padding: 11px;
+    border-radius: 33px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+.btn-sm {
+    font-size: 14px;
+    margin: 12px 0;
+    padding: 10px 19px;
+}
+
+.btn:hover {
+    color: dodgerblue;
+    background-color: white;
+}
+
+
+.contactform {
+    padding-top: 144px;
+    padding: 0 34px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    margin: 250px;
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    /*padding: 12px 0;*/
+
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+
+    border-radius: 7px;
+    margin: 6px 0 0 0;
+    padding: 7px;
+    /* width: 26vw*/
+
+}
+
+.contactform form {
+    margin: 0 40px;
+}
+
+#emailHelp {
+    color: rgb(54, 27, 254);
+    font-size: 14px;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+.formerror {
+    color: red;
+    font-size: 0.7em;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham {
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.cross {
+    margin-left: 240px;
+    margin-top: 15px
+}
+
+@media (max-width: 1700px) {
+    * {
+        /* background-color: rgb(252, 176, 176);*/
+    }
+
+    .devInfo {
+        font-size: 10px;
+    }
+
+    .buttons {
+        font-size: 6px;
+    }
+
+    .devInfo,
+    .portfolio,
+    .contactform {
+        margin: 55px 8px;
+    }
+}
+
+.portfolio h2 {
+    margin: 150px;
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+
+.portfolio h3 {
+    margin: 10px 90px;
+    font-size: 2em;
+    font-family: 'Source Code Pro', monospace;
+
+}

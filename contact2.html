@@ -1,0 +1,129 @@
+<!-- This is contact page our website  -->
+
+<!-- html tag starts here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head tag starts here -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>`
+    <!-- using external CSS below: -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- head tag ends here -->
+
+<!-- body tag starts here -->
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="/contact2.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="ham.png" alt="" width="23">
+                <img class="cross" src="cross.png" alt="" width="23">
+            </div>
+
+            <div class="contactform">
+                <h1>Contact me for general work</h1>
+
+                <!-- form tag starts here -->
+                <form  name="myForm" onsubmit="return validateForm()" method="post" action="form.php" >
+                    <div class="formdesign" id="name">
+                        Name: <input type="text" name="fname" required><b><span class="formerror"></span></b>
+                        
+                    </div>
+                    <div class="formdesign" id="email">
+                        Email: <input type="text" name="femail" required><b><span class="formerror"
+                                aria-describedby="emailHelp"> </span></b>
+                        <div id="emailHelp" class="form-text">We'll never share your email and phone with anyone else.
+                        </div>
+                    </div>
+                    <div class="formdesign" id="phone">
+                        Phone: <input type="text" name="fphone" required><b><span class="formerror"></span></b>
+                    </div>
+                    <div class="formdesign" id="form-check">
+                        <input type="checkbox" class="form-check-input" id="isclient" required>
+                        <label class="form-check-label" for="isclient">I want you to work on a project with me</label>
+                    </div>
+                    <button type="submit"  class="btn btn-sm">Submit</button>
+                </form>
+                <!-- form tag ends here -->
+                
+
+            </div>
+        </div>
+    </div>
+
+    <!-- using external javascript below for creating a responsive navigation menu that collapses into a dropdown on smaller screens:-->
+    <script src="script.js"></script> 
+     
+    
+</body>
+<!-- body tag ends here -->
+
+
+<!-- using internal javascript below for form validation: -->
+<!-- internal javascript starts here -->
+<script>
+    function clearErrors() {
+
+        errors = document.getElementsByClassName('formerror');
+        for (let item of errors) {
+            item.innerHTML = "";
+        }
+    }
+    function seterror(id, error) {
+        //sets errors inside tag of id
+        element = document.getElementById(id);
+        element.getElementsByClassName('formerror')[0].innerHTML = error;
+
+    }
+
+    function validateForm() {
+        var returnval = true;
+        clearErrors();
+
+
+        //perform validation and if validation fails, set the value of returnval to false
+        var name = document.forms['myForm']["fname"].value;
+        if (name.length < 5) {
+            seterror("name", "*Length of name is too short");
+            returnval = false;
+        }
+
+        if (name.length == 0) {
+            seterror("name", "*Lenght of name cannot be zero");
+            returnval = false;
+        }
+
+        var email = document.forms['myForm']["femail"].value;
+        if (email.length > 25) {
+            seterror("email", "*Email Length is too long");
+            returnval = false;
+        }
+
+        var phone = document.forms['myForm']["fphone"].value;
+        if (phone.length != 10) {
+            seterror("phone", "*Phone number should be of 10 digits");
+            returnval = false;
+        }
+
+        return returnval;
+    }
+</script>
+<!-- internal javascript ends here -->
+
+</html>
+<!-- html tag ends here -->

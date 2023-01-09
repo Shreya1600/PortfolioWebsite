@@ -1,0 +1,66 @@
+<!-- This is home page of our website-->
+
+<!-- html tag starts here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head tag starts here -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+
+    <!-- using external CSS below: -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<!-- head tag ends here -->
+
+<!-- body tag starts here -->
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="/contact2.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="ham.png" alt="" width="23">
+                <img class="cross" src="cross.png" alt="" width="23">
+            </div>
+            <div class="infoContainer">
+                <div class="devInfo">
+                    <div class="hello">Hi I am</div>
+                    <div class="name">Shreya Gupta</div>
+                    <div class="about">Web Developer</div>
+                    <div class="moreabout">I am a web developer.Currently pursuing graduation in Computer Science and
+                        Engineering.I have
+                        good knowlege of HTML,CSS and Javascript.I am a fresher.</div>
+                    <div class="buttons">
+
+                        <!-- linking our pdf file to our download CV button -->
+                        <a href="/resum.pdf " download target="_blank">
+                            <button class="btn">Download CV</button></a>
+                        <a href="/contact2.html"><button class="btn">Contact Me</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- using external javascript below for creating a responsive navigation menu that collapses into a dropdown on smaller screens:-->
+    <script src="script.js"></script>
+    
+</body>
+<!-- body tag starts here -->
+
+</html>
+<!-- html tag ends here -->
